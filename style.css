@@ -1,0 +1,319 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+
+**************************************************/
+/*@import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif';*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Droid Sans', sans-serif;
+    background-color: #F4FFFE;
+}
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+h1{
+    font: bold 4.236rem 'Prociono', serif;
+}
+h2{
+    font: bold 2.618rem 'Prociono', serif;
+}
+li, a{
+    font: bold 1.618rem 'Cabin', sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+p {
+    font: bold 1.2rem 'Open Sans', sans-serif;
+}
+pre, code, kbd{
+    font: normal 1.0rem 'Cabin', sans-serif;
+}
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+
+header{
+    height: 300px;
+    max-width:100%;
+    max-height:100%;
+    background-image: url(img/jojo.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid gold;
+}
+header h1{
+    text-align: center;
+    color: #FFFDFA;
+    font-family: cursive;
+    background: linear-gradient(180deg yellow white);
+    text-shadow: 0 0 20px blue;
+}
+nav{
+    width: 100%;
+    
+}
+nav>ul{
+    width: 100%;
+}
+nav li{
+    width: 100%;
+    list-style: none;
+}
+.mainnav li a{
+        color: black;
+}
+nav a,
+nav a:link,
+nav a:visited{
+    display: block;
+}
+nav a:focus,
+nav a:hover{
+    color: blue;
+    
+}
+nav a:active{
+    color: red;
+}
+main{
+    width: 100%;
+}
+.colfirst{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.colfirst p{
+    font-family: "Open Sans Condensed", sans-serif;
+}
+.colfirst img{
+    width: 50%;
+    height: auto;
+    border: 1px solid gold;
+}
+.colsecond {
+    padding: 10px;
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+.colsecond h2{
+    text-align: left;
+    
+}
+.colsecond p{
+    text-align: left;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+footer{
+    width: 100%;
+    clear: both;
+    padding: 5px;
+ 
+}
+footer p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.foot{
+    list-style: none;
+ 
+}
+.foot > li a{
+    color: blue;
+    font-size: 15px;
+}
+.foot > li a:focus,
+.foot > li a:hover{
+    color: red;
+}
+
+
+@media screen and (min-width:600px) {
+    .wrapper {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+        padding-left: 5%;
+    }
+    nav {
+        float: left;
+        display: block;
+        width: 90%;
+        margin-left: 5%;
+        border: 2px solid black;
+    }
+    nav li {
+        float: left;
+        display: inline;
+        width: 20%;
+        overflow: hidden;
+    }
+    nav a {
+        width: 100%;
+    }
+    main {
+        margin-left: 5%;
+        width: 90%;
+    }
+    .col {
+        display: block;
+        width: 50%;
+        float: center;
+    }
+    .col img {
+        width: 100%;
+    }
+    footer {
+        float: left;
+        width: 90%;
+    }
+    footer p {
+        text-align: left;
+    }
+    footer li {
+        display: inline;
+        float: left;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        border-bottom: 1px solid black;
+    }
+    nav {
+        float: left;
+        width: 90%;
+        border: none;
+    }
+    nav li {
+        float: left;
+        display: inline;
+        width: 20%;
+    }
+    .link {
+        width: 20%;
+    }
+    nav a {
+        text-decoration: none;
+    }
+    main {
+        width: 90%;
+    }
+    .col {
+        display: block;
+        float: left;
+        width: 50%;
+        padding: 30px;
+    }
+    .col img {
+        width: 60%;
+    }
+    footer {
+        display: block;
+        width: 100%;
+        border-top: 1px solid black;
+        float: left;
+        padding: 10px;
+    }
+    footer li {
+        text-decoration: none;
+        display: inline;
+        padding-right: 10px;
+    }
+    footer p {
+        text-align: left;
+    }
+    footer a {
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        width: 100%;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    nav {
+        margin: 0px;
+        padding-left: 5%;
+        width: 30%;
+        display: block;
+        float: left;
+        margin-top: 3%;
+    }
+    main {
+        margin: 0;
+        float: left;
+        display: block;
+        padding-top: 2%;
+        width: 70%;
+    }
+    .link {
+        width: 100%;
+    }
+    nav li {
+        text-decoration: none;
+        display: flex;
+        padding: 5px;
+    }
+    nav a {
+        text-align: left;
+    }
+    .col {
+        display: block;
+        float: left;
+        width: 50%;
+    }
+    .col img {
+        width: 55%;
+    }
+    footer {
+        display: block;
+        width: 100%;
+        border-top: 1px solid black;
+        float: left;
+        padding: 10px;
+    }
+    footer p {
+        text-align: left;
+    }
+    footer li {
+        text-decoration: none;
+        display: inline;
+        padding-right: 30px;
+    }
+    footer a {
+        text-decoration: none;
+    }
+}
